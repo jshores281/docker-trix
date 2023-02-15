@@ -20,38 +20,55 @@
 # 2. Docker Commands
 
 
+
+<pre>
+docker build -t ubuntu-image1 .
+</pre>
+
+
+Creates and runs a new container from a selected docker image
+<pre>
+docker run -ditp [localhost-port:container-PORT] --name [Containers-name-UNIQUE] [Image-used]
+</pre>
+
+
+
+
+Shows running docker containers
 <pre>
 docker ps -a
 </pre>
 
 
-
+Shows docker images pulled from docker hub in registery
 <pre>
 docker image ls
 </pre>
 
 
-
+Starts one or many docker containers 
 <pre>
-docker stop -t 0
+docker start -ia [CONTAINER ID...CONTAINER ID]
+</pre>
+
+
+Stops one or many docker containers
+<pre>
+docker stop -t 0 [CONTAINER ID...CONTAINER ID]
 </pre>
 
 
 
 <pre>
-docker kill 
+docker kill [CONTAINER ID...CONTAINER ID]
 </pre>
 
 
 
 <pre>
-docker rm
+docker rm [CONTAINER ID...CONTAINER ID]
 </pre>
 
 
-
-<pre>
-docker build -t ubuntu-image1 .
-</pre>
 
 
