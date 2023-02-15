@@ -4,8 +4,8 @@
 
 ---
 # SECTIONS
-## 1. [Dockerfiles](#2-Dockerfiles)
-## 2. [Docker Commands](#1-Docker-Commands)
+## 1. [Dockerfiles](#1-Dockerfiles)
+## 2. [Docker Commands](#2-Docker-Commands)
 
 ---
 
