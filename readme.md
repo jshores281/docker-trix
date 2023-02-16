@@ -7,6 +7,7 @@
 ## 1. [Dockerfiles](#1-Dockerfiles)
 ## 2. [Docker Commands](#2-Docker-Commands)
 
+
 ---
 
 <br><br>
@@ -24,7 +25,7 @@
 
 Builds docker image from dockerfile in current directory
 <pre>
-docker build -t [NEW/DOCKER-IMAGE-NAME] [./PATH/TO/DOCKERFILE]
+docker image build -t [NEW/DOCKER-IMAGE-NAME] [./PATH/TO/DOCKERFILE]
 </pre>
 
 
@@ -41,7 +42,7 @@ docker run -ditp [localhost-port:container-PORT] --name [Containers-name-UNIQUE]
 
 Enters CLI of Docker Container 
 <pre>
-docker exec -it [CONTAINER ID] bash
+docker exec -it [CONTAINER ID or CONTAINER NAME] bash
 </pre>
 
 
@@ -110,9 +111,49 @@ docker kill [CONTAINER ID...CONTAINER ID]
 
 Deletes one or many docker containers
 <pre>
-docker rm [CONTAINER ID...CONTAINER ID]
+docker container rm [CONTAINER ID...CONTAINER ID]
 </pre>
 
+
+
+<br>
+
+
+Deletes docker images 
+<pre>
+docker image rm [IMAGE ID...IMAGE ID]
+</pre>
+
+
+<br>
+
+
+Deletes all unused images
+<pre>
+docker image prune
+</pre>
+
+
+
+<br>
+
+
+Exports image from a container
+<pre>
+docker commit -p -a "author_here" -m "your_message" [CONTAINER-ID] [name_of_new_image]
+</pre>
+
+
+
+
+
+<br>
+
+
+Outputs container logs
+<pre>
+docker logs [CONTAINER-ID] 
+</pre>
 
 
 
